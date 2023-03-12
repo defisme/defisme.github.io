@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title class="localized" lang="en">Defisme</title>
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/top_logo.png"/>
+  <meta name="description" content="Decentralized Meme Token that Grow Into ........."/>
+  <meta name="viewport"
+        content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+  <meta name="theme-color" content="#dd920b"/>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defisme.com">
+  <meta property="og:title" content="Defisme - Best Secure Decentralized Finance">
+  <meta property="og:description"
+        content="Decentralized Meme Token">
+  <meta property="og:image" content="https://defisme.com/assets/images/top-banner/top-banner-1.png">
+  <meta property="og:image:width" content="1920"/>
+  <meta property="og:image:height" content="1080"/>
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://defisme.com">
+  <meta property="twitter:title" content="Defisme - Best Secure Decentralized Finance">
+  <meta property="twitter:description"
+        content="Decentralized Meme Token">
+  <meta property="twitter:image"
+        content="https://defisme.com/assets/images/top-banner/top-banner-1.png">
+  <link rel="apple-touch-icon" href="assets/images/top_logo.png"/>
+
+
+  <style>
+    @keyframes loading-rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #loading {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 9999999;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #loading svg {
+      animation: 0.6s loading-rotate linear infinite;
+    }
+  </style>
+
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"/>
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons-1.5.css"/>
+  <script src="https://kit.fontawesome.com/bf4f05667a.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="vendor/fontawesome/css/all.css"/> -->
+  <link rel="stylesheet" href="vendor/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="vendor/slick/slick.css"/>
+  <link rel="stylesheet" href="vendor/animation/animate.css"/>
+  <link rel="stylesheet" href="vendor/venobox/venobox.css"/>
+  <link rel="stylesheet" href="vendor/flaticon/flaticon.css"/>
+  <link rel="stylesheet" href="vendor/arrow-font/flaticon.css"/>
+  <link rel="stylesheet" href="css/localization.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/overrides.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/localization.js"></script>
+
+</head>
+<body lang="en" id="home">
+
+  <div id="loading">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px"
+         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path fill="#dd920b"d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"></path></svg>
+  </div>
+
+  <header id="page_top">
+    <div class="site-navigation menu-transparent">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-floating">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo_nav.png" class="img-fluid"/>
+            
+          </a>
+          <div style="display:flex; align-items: center;">
+            <div class="header-btn d-block d-lg-none nav-item dropdown header-mobile-btn">
+              <a href="javascript:;" id="change_lang" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="true"
+                 class="btn btn-radius btn-solid-border btn-lang dropdown-toggle">
+                <img width="30px" height="30px" class="change_lang"
+                     src="assets/images/lang/en.png"/>
+              </a>
+              <div class="dropdown-menu dropdown-lang" aria-labelledby="change_lang">
+                <div class="lang-list">
+                  <img src="assets/images/lang/en.png" onclick="localize('en')"/>
+                  <img src="assets/images/lang/ru.png" onclick="localize('ru')"/>
+                  <img src="assets/images/lang/esp.png" onclick="localize('esp')"/>
+                  <img src="assets/images/lang/fr.png" onclick="localize('fr')"/>
+                  <img src="assets/images/lang/ger.png" onclick="localize('ger')"/>
+                  <img src="assets/images/lang/ita.png" onclick="localize('ita')"/>
+                  <img src="assets/images/lang/ban.png" onclick="localize('ban')"/>
+                  <img src="assets/images/lang/ind.png" onclick="localize('ind')"/>
+                </div>
+              </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse mainmenu" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="#home" class="smoth-scroll nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project" class="smoth-scroll nav-link">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a href="#tokenomics" class="smoth-scroll nav-link">TOKENOMICS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#roadmap" class="smoth-scroll nav-link">RoadMap</a>
+              </li>
+              <li class="nav-item">
+                <a href="#howtobuy" class="smoth-scroll nav-link">Whitepaper</a>
+              </li>
+              <li class="nav-item">
+                <a href="#howtobuy" class="smoth-scroll nav-link">How To Buy</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto social-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://t.me/">
+                  <img src="assets/images/about/telegram.svg"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://twitter.com/">
+                  <img src="assets/images/about/twitter.png"/>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://github.com/">
+                  <img src="assets/images/about/github.png"/>
+                </a>
+              </li>
+              
+            </ul>
+            <!-- <div class="header-btn d-none d-md-block">
+              <a href="#howtobuy" class="smoth-scroll btn btn-radius btn-solid-border text-uppercase">How To Buy</a>
+            </div> -->
+            <div style="margin-left: 20px;"
+                 class="header-btn d-none d-md-block nav-item dropdown dropdown-lang-outer">
+              <a href="javascript:;" id="change_lang" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="true"
+                 class="btn btn-radius btn-solid-border btn-lang dropdown-toggle">
+                <img width="30px" height="30px" class="change_lang"
+                     src="assets/images/lang/en.png"/>
+              </a>
+              <div class="dropdown-menu dropdown-lang" aria-labelledby="change_lang">
+                <div class="lang-list">
+                  <img src="assets/images/lang/en.png" onclick="localize('en')"/>
+                  <img src="assets/images/lang/ru.png" onclick="localize('ru')"/>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner-2">
+    <div class="banner-main2 d-flex banner-bg align-items-center">
+      <div class="container">
+        <div class="counter" style="visibility: hidden;">
+          <div class="container">
+            <div class="row social-icons-body">
+              <ul class="navbar-nav social-icons">
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://t.me/">
+                    <img src="assets/images/about/telegram.svg"/>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://twitter.com/">
+                    <img src="assets/images/about/twitter.png"/>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light social-icon" target="_blank" href="https://github.com/">
+                    <img src="assets/images/about/github.png"/>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 banner-text">
+                <div class="banner-content-2">
+                  <h1 class="mb-40">Defisme</h1>
+                  <p class="mb-40">
+                    <span class="inline-block localized" lang="en">DeFisme has become one of the biggest trends in the crypto industry today, allowing users to conduct financial transactions without the need for third parties such as banks or traditional financial institutions. In DeFi, all transactions are decentralized through a blockchain network, which enables users to control and have full access to their assets without depending on central authorities.</span>
+                    <span class="inline-block localized" lang="ru">DeFisme стал одним из самых главных трендов в криптоиндустрии сегодня, позволяя пользователям проводить финансовые транзакции без необходимости третьих сторон, таких как банки или традиционные финансовые институты. В DeFi все транзакции децентрализованы через сеть блокчейн, что позволяет пользователям контролировать и иметь полный доступ к своим активам без зависимости от центральных органов.</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en">DeFisme allows for easy and inexpensive access to financial networks, with lower transaction fees and no geographical limitations. This enables users from around the world to access financial services without having to have a traditional bank account or meet strict requirements.</span>
+                    <span class="inline-block localized" lang="ru">DeFisme позволяет легко и недорого получить доступ к финансовым сетям, с более низкими комиссиями за транзакции и без географических ограничений. Это позволяет пользователям со всего мира получать финансовые услуги, не имея традиционного банковского счета или не соответствуя строгим требованиям.</span>
+                    
+                    <br>
+                    <span class="inline-block localized" lang="en">DeFisme is an industry that is still very new and constantly evolving. New innovations and developments are being made by developers and contributors, enabling the creation of new applications and more advanced and efficient financial solutions.</span>
+                    <span class="inline-block localized" lang="ru">DeFisme - это отрасль, которая до сих пор очень нова и постоянно развивается. Разработчики и участники вносят новые инновации и разработки, обеспечивая создание новых приложений и более продвинутых и эффективных финансовых решений.</span>
+                    
+                    <br>
+                  </p>
+                  <div class="banner-buttons">
+                    <a target="_blank" href="https://pancakeswap.finance/" class="inline-block btn btn-main btn-radius localized" lang="en">BUY $DSME</a>
+                    <a target="_blank" href="https://pancakeswap.finance/" class="inline-block btn btn-main btn-radius localized" lang="ru">КУПИТЬ $DSME</a>
+
+                    <a target="_blank" href="https://poocoin.app/tokens/" class="inline-block btn btn-solid-border text-uppercase btn-radius localized" lang="en">View Chart</a>
+                    <a target="_blank" href="https://poocoin.app/tokens/" class="inline-block btn btn-solid-border text-uppercase btn-radius localized" lang="ru">Посмотреть диаграмму</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 banner-cover-container">
+                <div class="d-xl-block">
+                  <div class="banner-cover">
+                    <div class="cover"></div>
+                    <img class="cover-top" src="assets/images/banner/wallet.png"/>
+                    <img class="cover-bottom" src="assets/images/banner/dex.png"/>
+                    <img class="cover-left" src="assets/images/banner/defi.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="project" class="pt-40 section service-2">
+    <div class="l-shape l-shape-1-1"></div>
+    <div class="l-shape l-shape-1-2"></div>
+    <div class="l-shape l-shape-1-3"></div>
+    <div class="l-shape l-shape-2-1"></div>
+    <div class="l-shape l-shape-2-2"></div>
+    <div class="l-shape l-shape-2-3"></div>
+    <div class="l-shape l-shape-3-1"></div>
+    <div class="l-shape l-shape-3-2"></div>
+    <div class="l-shape l-shape-3-3"></div>
+    <div class="l-shape l-shape-4-1"></div>
+    <div class="l-shape l-shape-4-2"></div>
+    <div class="l-shape l-shape-4-3"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="section-heading text-center mb-80 text-center">
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="en" data-wow-delay="0s">Project Background</span>
+            <span class="block text-primary text-uppercase mb-10 wow slideInUp localized" lang="ru" data-wow-delay="0s">история проекта</span>
+
+            <h2 class="block wow flipInX localized" lang="en" data-wow-delay=".1s">Project Background</h2>
+            <h2 class="block wow flipInX localized" lang="ru" data-wow-delay=".1s">история проекта</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row service-2-container wow flipInX" data-wow-delay=".3s">
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80 vine-bg-1">
+            <div class="icon-box2 first-icon">
+              <i class="fa fa-wallet"></i>
+<!--              <i class="flaticon flaticon-database-storage"></i>-->
+            </div>
+            <h3 class="block text-uppercase">Defisme Wallet</h3>
+            <p class="block localized" lang="en">Defisme cryptocurrency wallet application is software that allows users to store, send, and receive digital currencies on their Android device. The wallet is typically connected to the blockchain, the distributed network that supports cryptocurrency, and stores the private keys needed to access the user's funds.</p>
+            <p class="block localized" lang="ru">Defisme Приложение для кошелька криптовалюты — это программное обеспечение, которое позволяет пользователям хранить, отправлять и получать цифровые валюты на своих устройствах Android. Кошелек обычно подключен к блокчейну, распределенной сети, поддерживающей криптовалюту, и хранит закрытые ключи, необходимые для доступа к средствам пользователя.</p>
+
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80">
+            <div class="icon-box2 second-icon">
+              <i class="fa fa-cash-register"></i>
+<!--              <i class="flaticon flaticon-connection"></i>-->
+            </div>
+            <h3 class="block text-uppercase localized" lang="en">Defisme Decentralized Exchange</h3>
+            <h3 class="block text-uppercase localized" lang="ru">Децентрализованная биржа Defisme</h3>
+
+            <p class="block localized" lang="en">DefismeSwap is a decentralized exchange (DEX) that runs on the Binance Smart Chain (BSC) blockchain.</p>
+            <p class="block localized" lang="ru">DefismeSwap — это децентрализованная биржа (DEX), работающая на блокчейне Binance Smart Chain (BSC).</p>
+            
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-8">
+          <div class="text-center service-item2 mb-80 vine-bg-2">
+            <div class="icon-box2 third-icon">
+              <i class="fa fa-money-bill"></i>
+
+            </div>
+            <h3 class="text-uppercase">Defisme Lending & Borrow Defi</h3>
+            <p class="block localized" lang="en">Lending Borrow Defisme is a decentralized financial protocol that allows users to borrow and lend various types of cryptocurrencies without the need for intermediaries such as banks or other traditional financial institutions. In this platform, users can borrow and lend cryptocurrencies such as Bitcoin (BTC), Ethereum (ETH), Tether (USDT), and so on.</p>
+            <p class="block localized" lang="ru">Кредитование Borrow Defisme — это децентрализованный финансовый протокол, который позволяет пользователям брать взаймы и кредитовать различные типы криптовалют без необходимости в посредниках, таких как банки или другие традиционные финансовые учреждения. На этой платформе пользователи могут брать и одалживать криптовалюты, такие как биткойн (BTC), Ethereum (ETH), Tether (USDT) и так далее.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="about2 pt-80 section pb-110">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="section-heading mb-50 text-center text-xl-left overflow-hidden">
+            <span class="text-primary text-uppercase mb-10 d-inline-block wow slideInUp"
+                  data-wow-duration="1s" data-wow-delay="0s">Tokenomics</span>
+            <h2 class="wow flipInX mb-40" data-wow-duration="1s" data-wow-delay=".2s">Defisme TOKEN</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10">
+          <div class="about-content-wrapper mb-5 mb-xl-0">
+            <p class="block localized" lang="en"><b>Name: Defisme</b></p>
+            <p class="block localized" lang="ru">Название: Defisme</p>
+
+            <p class="block localized" lang="en">Symbol: DSME</p>
+            <p class="block localized" lang="ru">Символ: DSME</p>
+
+            <p class="block localized" lang="en">Total Supply: 88.000.000</p>
+            <p class="block localized" lang="ru">Общее предложение: 88.000.000</p>
+
+            <p class="block localized" lang="en">Decimal: 8</p>
+            <p class="block localized" lang="ru">Десятичная дробь: 8</p>
+
+            <p class="block localized" lang="en">Contract Address: 0xcEBE7F9C8AE5e17f6842625B0fc5d9E20D089Ff5</p>
+            <p class="block localized" lang="ru">Адрес контракта: 0xcEBE7F9C8AE5e17f6842625B0fc5d9E20D089Ff5</p>
+
+            <p class="block localized" lang="en">Network: Binance Smart Chain</p>
+            <p class="block localized" lang="ru">Сеть: Binance Smart Chain</p>
+            
+            <p class="block localized" lang="en">Based on the Binance Smart Chain network, Defisme tokenomics are designed for optimum return</p>
+            <p class="block localized" lang="ru">Токеномика Defisme, основанная на сети Binance Smart Chain, предназначена для оптимальной отдачи.</p>
+
+            <ul>
+              <li class="list-item localized" lang="en">40% LOCK</li>
+              <li class="list-item localized" lang="ru">40% БЛОКИРОВКА</li>
+
+              <li class="list-item localized" lang="en">40% PROJECT UTILITY</li>
+              <li class="list-item localized" lang="ru">40% ПОЛЕЗНОСТИ ПРОЕКТА</li>
+
+              <li class="list-item localized" lang="en">10% DEX-CEX</li>
+              <li class="list-item localized" lang="ru">10% DEX-CEX</li>
+
+              <li class="list-item localized" lang="en">5% POOL</li>
+              <li class="list-item localized" lang="ru">5% БАССЕЙН</li>
+
+              <li class="list-item localized" lang="en">3% MARKETING</li>
+              <li class="list-item localized" lang="ru">3% МАРКЕТИНГ</li>
+
+              <li class="list-item localized" lang="en">2% DEVELOPMENT</li>
+              <li class="list-item localized" lang="ru">2% РАЗВИТИЕ</li>
+
+            </ul>
+            
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 pl-lg-0 pr-lg-0 mt-auto mb-auto pi-chart-col">
+          <div class="about-img2 mt-5 mt-xl-0 wow zoomIn" data-wow-delay=".2s">
+            <img width="100%" src="assets/images/about/tokenomic.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process2 pt-110 pb-80 section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <span class="text-primary text-uppercase mb-10 d-inline-block wow slideInUp"
+                  data-wow-duration="1s" data-wow-delay="0s"></span>
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Contract Description</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Функции</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fa fa-coins"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">Native Token</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Собственный токен</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">DSME is the main token that will be used in all Defisme ecosystems and transactions</p>
+              <p class="block localized" lang="ru">DSME — это основной токен, который будет использоваться во всех экосистемах и транзакциях Defisme.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row right process-2-item">
+        <div class="col-lg-6 col-md-12 ml-auto">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <h3 class="block text-uppercase localized" lang="en">Rug-proof</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Коврик-доказательство</h3>
+
+                <div class="process-icon"><i class="fa fa-key"></i></div>
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">With liquidity pool tokens locked upon token creation and contract renounced, it's impossible for anyone to pull the rug on this token.</p>
+              <p class="block localized" lang="ru">С токенами пула ликвидности, заблокированными при создании токена, и отказом от контракта, никто не может нарушить этот токен.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fa fa-toolbox"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">Fix Total Supply</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Исправить общее предложение</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">Total supply remains constant without minting and burning which will affect price volatility</p>
+              <p class="block localized" lang="ru">Общее предложение остается постоянным без чеканки и сжигания, что повлияет на волатильность цен.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row right process-2-item">
+        <div class="col-lg-6 col-md-12 ml-auto">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <h3 class="block text-uppercase localized" lang="en">No Tax Transaction</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Нет налоговой операции</h3>
+
+                <div class="process-icon"><i class="fa fa-ban"></i></div>
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">Without a transaction tax when transferring, buying and selling will make it easier for holders to make frequent transactions</p>
+              <p class="block localized" lang="ru">Без налога на транзакции при передаче, покупке и продаже держателям будет проще совершать частые транзакции.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row process-2-item">
+        <div class="col-lg-6 col-md-12">
+          <div class="item-box">
+            <div class="row">
+              <div class="process-item text-center wow zoomIn style-2"
+                   data-wow-delay=".1s">
+                <div class="process-icon"><i class="fas fa-user-shield"></i></div>
+                <h3 class="block text-uppercase localized" lang="en">No Hidden Fee</h3>
+                <h3 class="block text-uppercase localized" lang="ru">Нет скрытой платы</h3>
+
+              </div>
+            </div>
+            <div class="row text">
+              <p class="block localized" lang="en">Defisme is committed to its holders and will not provide hidden fees in every transaction</p>
+              <p class="block localized" lang="ru">Defisme привержен своим держателям и не будет взимать скрытые комиссии за каждую транзакцию.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="roadmap" class="roadmap pt-110 pb-80 section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">RoadMap</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Дорожная карта</h2>
+
+          </div>
+        </div>
+      </div>
+      <div style="justify-content: center;" class="row roadmap-list wow fadeInUp">
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Token Deployment and Website Launch</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Создание токена и запуск сайта</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item roadmap-done localized" lang="en">Social Media Marketing</div>
+          <div class="flex roadmap-item roadmap-done localized" lang="ru">Маркетинг в области СМИ</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Listing on CMC, CoinGecko</div>
+          <div class="flex roadmap-item localized" lang="ru">Листинг на CMC, CoinGecko</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Audit Token</div>
+          <div class="flex roadmap-item localized" lang="ru">Жетон аудита</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Wallet Android Deployment</div>
+          <div class="flex roadmap-item localized" lang="ru">Развертывание Android-кошелька</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Partner with other platforms</div>
+          <div class="flex roadmap-item localized" lang="ru">Сотрудничайте с другими платформами</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Decentralized Exchange Deployment</div>
+          <div class="flex roadmap-item localized" lang="ru">Развертывание децентрализованной биржи</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Lending & Borrow DEFI Deployment</div>
+          <div class="flex roadmap-item localized" lang="ru">Кредитование и заимствование Развертывание DEFI</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">CEX Listing Aplly</div>
+          <div class="flex roadmap-item localized" lang="ru">Подать заявку на листинг CEX</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">Marketing push</div>
+          <div class="flex roadmap-item localized" lang="ru">Маркетинговый толчок</div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="flex roadmap-item localized" lang="en">More Feature</div>
+          <div class="flex roadmap-item localized" lang="ru">Дополнительные функции</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="howtobuy" class="pt-110 pb-80 section howtobuy">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="section-heading text-center mb-70">
+            <h2 class="block wow flipInX localized" lang="en" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">How To Buy $DSME ?</h2>
+            <h2 class="block wow flipInX localized" lang="ru" style="margin-bottom: 30px;" data-wow-duration="1s" data-wow-delay=".1s">Как купить $DSME?</h2>
+
+          </div>
+        </div>
+      </div>
+      <div style="justify-content: center;" class="row">
+        <div class="col-xl-1 d-none d-xl-block howtobuy-cover">
+          <img class="howtobuy-logo wow zoomIn" data-wow-delay="1s" data-wow-duration="2s"
+               src="assets/images/howtobuy/logo_new.png"/>
+          <img class="howtobuy-wallet wow zoomIn" data-wow-delay="1.2s" data-wow-duration="2s"
+               src="assets/images/howtobuy/wallet.png"/>
+        </div>
+        <div class="col-xl-8 buy-list">
+          <div class="wow slideInUp">
+            <div class="buy-item">
+              <div class="item-title"><i>1</i>
+                <div>Pancakeswap</div>
+              </div>
+              <ul class="howtobuy-ulist">
+                <li class="list-item localized" lang="en">Desktop: Download metamask.io Google Chrome extension and create a wallet (remember to secure your private keys!). Access exchange.pancakeswap.finance online and connect to metamask wallet.</li>
+                <li class="list-item localized" lang="ru">Рабочий стол: загрузите расширение metamask.io для Google Chrome и создайте кошелек (не забудьте защитить свои личные ключи!). Получите доступ к exchange.pancakeswap.finance онлайн и подключитесь к кошельку Metamask.</li>
+
+                <li class="list-item localized" lang="en">Mobile: Android - download Trustwallet app and access exchange.pancakeswap.finance through the browser dApp.</li>
+                <li class="list-item localized" lang="ru">Мобильный: Android - загрузите приложение Trustwallet и получите доступ к exchange.pancakeswap.finance через dApp браузера.</li>
+
+                <li class="list-item localized" lang="en">Mobile: iOS - open exchange.pancakeswap.finance on your browser app → click "Connect" in the corner → choose "WalletConnect" → choose "Trust Wallet" → approve to connect to your wallet.</li>
+                <li class="list-item localized" lang="ru">Мобильный: iOS - откройте exchange.pancakeswap.finance в своем браузере → нажмите «Подключиться» в углу → выберите «WalletConnect» → выберите «Trust Wallet» → подтвердите подключение к вашему кошельку.</li>
+
+              </ul>
+            </div>
+            <div class="buy-item">
+              <div class="item-title"><i>2</i>
+                <div>Binance Smart Coin</div>
+              </div>
+              <div class="block item-content localized" lang="en">Add BSC Mainnet Network to your Metamask and buy $BNB to add to your wallet.</div>
+              <div class="block item-content localized" lang="ru">Добавьте сеть BSC Mainnet в свою метамаску и купите $ BNB, чтобы добавить в свой кошелек.</div>
+
+            </div>
+            <div class="buy-item">
+              <div class="item-title"><i>3</i>
+                <div class="block localized" lang="en">Swap $BNB for $DSME</div>
+                <div class="block localized" lang="ru">Обменять $BNB на $DSME</div>
+
+              </div>
+              <div class="block item-content localized" lang="en">On Pancakeswap, choose BNB then choose "Select a currency" → "Manage Tokens" at the bottom → "Tokens" tab and enter $DSME Contract address to "Add" to your list.</div>
+              <div class="block item-content localized" lang="ru">На Pancakeswap выберите BNB, затем выберите «Выбрать валюту» → «Управление токенами» внизу → вкладка «Токены» и введите адрес контракта $ DSME, чтобы «Добавить» в свой список.</div>
+
+              <!--              TODO: translate-->
+              <ul class="howtobuy-ulist indented-further">
+                <li class="" lang="en">Contract: <span>0xcEBE7F9C8AE5e17f6842625B0fc5d9E20D089Ff5</span></li>
+                <li class="list-item localized" lang="en">Note: set slippage to 1-2% before swapping</li>
+                <li class="list-item localized" lang="ru">Примечание: перед заменой установите проскальзывание на 1-2%.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 d-none d-xl-block howtobuy-cover">
+          <img class="howtobuy-user slide-top"
+               src="assets/images/howtobuy/jumping-man.png"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5">
+            <p class="block copyright text-center text-xl-left text-lg-left localized" lang="en">Copyright © 2023 Defisme.com All Rights Reserved</p>
+            <p class="block copyright text-center text-xl-left text-lg-left localized" lang="ru">Copyright © 2023 Defisme.com Все права защищены.</p>
+
+          </div>
+          <div class="col-xl-7 col-lg-7">
+            <div class="footer-socials text-center text-xl-right text-lg-right">
+              <a target="_blank" href="https://t.me/">
+                <img src="assets/images/about/telegram.svg"/>
+              </a>
+              <a target="_blank" href="https://twitter.com/">
+                <img src="assets/images/about/twitter.png"/>
+              </a>
+              <a target="_blank" href="https://medium.com/">
+                <img src="assets/images/about/github.png"/>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed-btm-top">
+    <a href="#page_top" class="smoth-scroll scroll-to-top bg-shadow">
+      <i class="fa fa-angle-up"></i></a></div>
+
+
+  <script src="js/core.min.js"></script>
+  <script src="js/home.min.js"></script>
+</body>
+</html>
